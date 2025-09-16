@@ -66,6 +66,9 @@ int main(void) {
     // 결과 출력
     cout << count << '\n';
 
+    // 동적 할당 해제
+    delete[] arr;
+    
     return 0;
 }
 
@@ -105,3 +108,4 @@ void merge_sort(int *arr, int start, int end) {
         merge(arr, start, mid, end);    // 정렬된 두 배열 병합
     }
 }
+
