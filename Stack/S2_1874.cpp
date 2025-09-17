@@ -7,8 +7,8 @@ using namespace std;
 int main(void) {
 
     // // 속도 증가
-    // ios::sync_with_stdio(false);
-    // cin.tie(NULL);
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
 
     // 최대 수 입력 받기
     int n;
@@ -58,4 +58,5 @@ int main(void) {
     }
 
     return 0;
+
 }
