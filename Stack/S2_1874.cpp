@@ -6,7 +6,7 @@ using namespace std;
 
 int main(void) {
 
-    // // 속도 증가
+    // 속도 증가
     ios::sync_with_stdio(false);
     cin.tie(NULL);
 
@@ -60,3 +60,4 @@ int main(void) {
     return 0;
 
 }
+
