@@ -1,6 +1,4 @@
 #include <iostream>
-#include <vector>
-
 using namespace std;
 
 // 병합 정렬 함수 선언
@@ -93,3 +91,4 @@ void merge_sort(int *arr, int start, int end) {
         merge(arr, start, mid, end);
     }
 }
+
