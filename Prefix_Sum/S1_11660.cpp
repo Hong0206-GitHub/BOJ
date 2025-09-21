@@ -23,7 +23,7 @@ int main() {
        for (int j = 1; j <= n; j++) {
             int temp;
             cin >> temp;
-            // 구간 합
+            // 합 배열
             prefix_sum_arr[i][j] = prefix_sum_arr[i - 1][j] + prefix_sum_arr[i][j - 1] - prefix_sum_arr[i - 1][j - 1] + temp;
        }
     // 문제 조건에 맞는 답안 출력
@@ -40,4 +40,5 @@ int main() {
     delete[] prefix_sum_arr;
 
     return 0;
+
 }
