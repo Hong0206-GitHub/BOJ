@@ -9,8 +9,8 @@ void merge_sort(int *arr, int start, int end);
 // 이분탐색을 이용한 첫 번째 중복 원소 등장 위치와,
 // 마지막 원소 등장 위치 반환 함수
 // 탐색 실패시 -1
-int upper_bound(int *arr, int start, int end, int key);
-int lower_bound(int *arr, int start, int end, int key);
+int last_occurrence(int *arr, int start, int end, int key);
+int first_occurrence(int *arr, int start, int end, int key);
 
 int main(void) {
 
@@ -36,8 +36,8 @@ int main(void) {
     while (M--) {
         int key;
         cin >> key;
-        int start = lower_bound(arr, 0, N - 1, key);
-        int end = upper_bound(arr, 0, N - 1, key);
+        int start = first_occurrence(arr, 0, N - 1, key);
+        int end = last_occurrence(arr, 0, N - 1, key);
 
         if (start == -1) cout << 0 << ' ';
         else cout << end - start + 1 << ' ';
@@ -82,7 +82,7 @@ void merge_sort(int *arr, int start, int end) {
 }
 
 // 중복 원소중 가장 오른쪽에 있는 인덱스 반환 함수
-int upper_bound(int *arr, int start, int end, int key) {
+int last_occurrence(int *arr, int start, int end, int key) {
     // 기본값 -1 (탐색 실패시)
     int temp = -1;
     // 이분탐색 알고리즘
@@ -102,7 +102,7 @@ int upper_bound(int *arr, int start, int end, int key) {
 }
 
 // 중복 원소 중 가장 왼쪽에 있는 인덱스 반환 함수
-int lower_bound(int *arr, int start, int end, int key) {
+int first_occurrence(int *arr, int start, int end, int key) {
 
     // 기본값 -1 (key가 없는 경우 그대로 반환됨)
     int temp = -1;
