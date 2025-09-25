@@ -1,6 +1,8 @@
 // 임시 풀이
 // 이진 탐색으로 중복 원소 시작 인덱스와
-// 종료 인덱스를 알 수 있는 알고리즘 학습 예정.
+// 종료 인덱스를 알 수 있는 알고리즘 학습 완료
+
+// Search/Binary_Search/S4_10816.cpp에 업로드 완료
 
 #include <iostream>
 
@@ -43,4 +45,5 @@ int main(void) {
     delete[] arr;
 
     return 0;
+
 }
