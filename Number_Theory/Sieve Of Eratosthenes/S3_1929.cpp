@@ -5,8 +5,8 @@ using namespace std;
 int main(void) {
 
     // // 속도 증가
-    // ios::sync_with_stdio(false);
-    // cin.tie(NULL);
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
 
     // M, N 입력 받기
     int M, N;
@@ -31,3 +31,4 @@ int main(void) {
 
     return 0;
 }
+
