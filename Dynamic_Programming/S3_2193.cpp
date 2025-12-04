@@ -12,7 +12,7 @@ int main(void) {
     cin >> N;
 
     // DP 테이블 선언
-    vector<int> DP(N + 1);
+    vector<long long> DP(N + 1);
     DP[0] = 0;  // 0인 이친수는 없음
     DP[1] = 1;  // 1은 그 자체로 이친수 하나임
 
